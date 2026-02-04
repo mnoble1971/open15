@@ -14,9 +14,9 @@ spec:
       releaseName: my-helm-demo
       valueFiles:
         - values.yaml
-      # optional: quick override (remove if you want)
-      values: |
-        replicaCount: 3
+      # # optional: quick override (remove if you want)
+      # values: |
+      #   replicaCount: 1
 
   destination:
     server: https://kubernetes.default.svc
