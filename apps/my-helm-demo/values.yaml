@@ -1,4 +1,4 @@
-replicaCount: 5
+replicaCount: 3
 image:
   repo: nginxinc/nginx-unprivileged
   tag: "1.25"
