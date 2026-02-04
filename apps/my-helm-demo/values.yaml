@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repo: registry.access.redhat.com/ubi9/nginx-120
-  tag: "latest"
+  repo: nginxinc/nginx-unprivileged
+  tag: "1.25"
 service:
-  port: 80
+  port: 8080
