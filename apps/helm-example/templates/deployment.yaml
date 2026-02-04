@@ -1,23 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.appName }}
-  labels:
-    app: {{ .Values.appName }}
-  namespace: test-app
+  name: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ .Values.appName }}
+      app: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app: {{ .Values.appName }}
+        app: {{ .Release.Name }}
     spec:
       containers:
-        - name: nginx
-          image: {{ .Values.image }}
+        - name: web
+          image: "{{ .Values.image.repo }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: 80
-    Test: test

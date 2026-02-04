@@ -1,5 +1,0 @@
-apiVersion: v2
-name: super-simple-nginx
-description: A super simple Helm chart for Nginx
-version: 0.1.0
-appVersion: "1.23.4"

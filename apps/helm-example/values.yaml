@@ -1,0 +1,6 @@
+replicaCount: 1
+image:
+  repo: nginx
+  tag: "1.25"
+service:
+  port: 80

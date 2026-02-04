@@ -1,3 +1,0 @@
-replicaCount: 3
-image: nginx:latest
-appName: test-app
