@@ -17,10 +17,3 @@ spec:
           image: "{{ .Values.image.repo }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: {{ .Values.service.port }}
-          volumeMounts:
-            - name: html
-              mountPath: /usr/share/nginx/html
-      volumes:
-        - name: html
-          configMap:
-            name: {{ .Release.Name }}-html
