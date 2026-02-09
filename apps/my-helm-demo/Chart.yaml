@@ -1,4 +1,4 @@
-apiVersion: v55
+apiVersion: v2
 name: my-helm-demo
 description: super simple demo chart
 type: application
